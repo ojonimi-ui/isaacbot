@@ -134,7 +134,7 @@ bot.on('message', (msg) => {
             };
 
             // Send message with two line spaces after "Great! Trend started."
-            bot.sendMessage(chatId, 'Great! Start Trend.\n\nGet started with Micro Buy \n\n .', boostOptions);
+            bot.sendMessage(chatId, 'Great! Start Trend.\n\nGet started with Micro Buy', boostOptions);
         } else {
             bot.sendMessage(chatId, 'Invalid project template. Please enter at least three words.\n\nYou can add up your social links as well if valid (not recommended)');
         }
