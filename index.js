@@ -125,7 +125,7 @@ bot.on('message', (msg) => {
                     inline_keyboard: [
                         [
                             {
-                                text: 'BOOST TREND', // Button text
+                                text: 'START TREND', // Button text
                                 callback_data: 'boost_trend', // Data sent back when button is clicked
                             },
                         ],
@@ -134,7 +134,7 @@ bot.on('message', (msg) => {
             };
 
             // Send message with two line spaces after "Great! Trend started."
-            bot.sendMessage(chatId, 'Great! Trend started.\n\nBoost your trend and get more buys.', boostOptions);
+            bot.sendMessage(chatId, 'Great! Start Trend.\n\nGet started with Micro Buy \n\n .', boostOptions);
         } else {
             bot.sendMessage(chatId, 'Invalid project template. Please enter at least three words.\n\nYou can add up your social links as well if valid (not recommended)');
         }
