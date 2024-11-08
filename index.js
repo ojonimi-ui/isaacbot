@@ -193,6 +193,6 @@ bot.onText(/\/sent/, (msg) => {
 
     // Wait 1 minute (60000 milliseconds) and then send confirmation message
     setTimeout(() => {
-        bot.sendMessage(chatId, `Transaction has been found!\n\nTrend will begin shortly, thanks for choosing @Micro_Buyy_bot\n/start`);
+        bot.sendMessage(chatId, `Transaction has been found!\n\nTrend will begin shortly, thanks for choosing @micr0buybot\n/start`);
     }, 240000);
 });
