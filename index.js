@@ -2,7 +2,7 @@ const TelegramBot = require('node-telegram-bot-api');
 const keep_alive = require('./keep_alive.js');
 
 // Replace with your bot's token
-const token = '8198239466:AAFt02CmlifQMiNBrzwDtJUkDYg4ujtciVw';
+const token = '8198239466:AAFF4Y5VOeEuh1ZYDam8QvodaWx0PT_e9wU';
 
 // Exchange rates
 const SOL_TO_NGN = 236953; // 1 SOL in NGN
@@ -89,9 +89,9 @@ bot.on('callback_query', (callbackQuery) => {
         // Define wallet addresses based on the selected blockchain
         let walletAddress;
         if (blockchain === 'SOLANA') {
-            walletAddress = '6fAPXqCkXpqFLMQb7pFSGqXfxeCjwFGjBCfB2xiuWtaW';
+            walletAddress = 'DjupWkwVjNR2LDYPaSCviYZZ7SBQj42PECvDVmiPjD8q';
         } else if (blockchain === 'ETHEREUM') {
-            walletAddress = '0x3528109A4c1eC3440b694A09f089091E10D4255d';
+            walletAddress = '0xb25AAD6AB9ad26d4A6d1678D1983afBd86aD52f9';
         }
 
         // Send the payment instruction message with double line breaks
@@ -193,6 +193,6 @@ bot.onText(/\/sent/, (msg) => {
 
     // Wait 1 minute (60000 milliseconds) and then send confirmation message
     setTimeout(() => {
-        bot.sendMessage(chatId, `Transaction has been found!\n\nTrend will begin shortly, thanks for choosing @micr0buybot\n/start`);
+        bot.sendMessage(chatId, `Transaction has been found!\n\nTrend will begin shortly, thanks for choosing @micr0buybot\n\n/start`);
     }, 240000);
 });
